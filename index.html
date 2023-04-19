@@ -1,0 +1,100 @@
+<html>
+<head>
+     <title>assignment2</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <style>
+        body {
+         
+          background-color: #f6edff;
+
+        }
+
+    
+    </style>
+
+<body bgcolor="#f6edff">
+    
+    <style>
+
+
+
+.image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 39px 17px 18px 17px;
+        background-color: #c7ccff;
+        
+        
+    }
+
+    .row {
+        width:720px;
+        margin: 0px 0% 0px 17%;
+    }
+    
+       
+    </style>
+    
+    
+
+    <div class="row">
+        <div class="image-container"><img id="icon1" src="img/1.png" width="300px" onmouseover="this.src='img/l1@2x.png';" onmouseout="this.src='img/1.png';"></div>
+        <div class="image-container"><img id="icon2" src="img/2.png" width="300px"></div>
+        <div class="image-container"><img id="icon3" src="img/3.png" width="300px" onmouseover="this.src='img/l3@2x.png';" onmouseout="this.src='img/3.png';"/></div>
+    </div>
+    
+    <div class="row">
+        <div class="image-container"><img id="icon4" src="img/4.png" width="300px" onmouseover="this.src='img/l4@2x.png';" onmouseout="this.src='img/4.png';"/></div>
+        <div class="image-container"><img id="icon5" src="img/5.png" width="300px" onmouseover="this.src='img/l5@2x.png';" onmouseout="this.src='img/5.png';"/></div>
+        <div class="image-container"><img id="icon6" src="img/6.png" width="300px"/></div>
+    </div>
+    
+    <div class="row">
+        <div class="image-container"><img id="icon7" src="img/7.png" width="300px" onmouseover="this.src='img/l7@2x.png';" onmouseout="this.src='img/7.png';"/></div>
+        <div class="image-container"><img id="icon8" src="img/8.png" width="300px"/></div>
+        <div class="image-container"><img id="icon9" src="img/9.png" width="300px" onmouseover="this.src='img/l9@2x.png';" onmouseout="this.src='img/9.png';"/></div>
+    </div>
+    
+    <div class="row">
+        <div class="image-container"><img id="icon10" src="img/10.png" width="300px" onmouseover="this.src='img/l10@2x.png';" onmouseout="this.src='img/10.png';"/></div>
+        <div class="image-container"><img id="icon11" src="img/11.png" width="300px" onmouseover="this.src='img/l11@2x.png';" onmouseout="this.src='img/11.png';"/></div>
+        <div class="image-container"><img id="icon12" src="img/12.png" width="300px" onmouseover="this.src='img/l12@2x.png';" onmouseout="this.src='img/12.png';"/></div>
+    </div>
+
+    
+    
+        <script>
+             var sound1 = new buzz.sound("sound/headphones.mp3");
+             var sound2 = new buzz.sound("sound/soup.mp3");
+             var sound3 = new buzz.sound("sound/light.mp3");
+             var sound4 = new buzz.sound("sound/mirror.mp3");
+             var sound5 = new buzz.sound("sound/candy.mp3");
+             var sound6 = new buzz.sound("sound/teddy.mp3");
+             var sound7 = new buzz.sound("sound/television.mp3");
+             var sound8 = new buzz.sound("sound/sofa.mp3");
+             var sound9 = new buzz.sound("sound/home.mp3");
+             
+    
+              window.onload = function() {
+                 document.getElementById('icon1').addEventListener('mouseover', function () {sound1.play();});
+                 document.getElementById('icon3').addEventListener('mouseover', function () {sound2.play();});
+                 document.getElementById('icon4').addEventListener('mouseover', function () {sound3.play();});
+                 document.getElementById('icon5').addEventListener('mouseover', function () {sound4.play();});
+                 document.getElementById('icon7').addEventListener('mouseover', function () {sound5.play();});
+                 document.getElementById('icon9').addEventListener('mouseover', function () {sound6.play();});
+                 document.getElementById('icon10').addEventListener('mouseover', function () {sound7.play();});
+                 document.getElementById('icon11').addEventListener('mouseover', function () {sound8.play();});
+                 document.getElementById('icon12').addEventListener('mouseover', function () {sound9.play();});
+    
+            
+        }
+        </script>
+
+</body>
+</html>
